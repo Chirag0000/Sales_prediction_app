@@ -14,7 +14,7 @@ def run_ml():
 
   if submenu=="Random Forest":
     st.subheader("Random Forest")
-    shop_id = st.slider('shop_id', 1,59, 1 )
+    shop_id = st.slider('shop_id', 0,59, 1 )
     item_id = st.slider('item_id', 0,22167, 1 )
     date_block_num=st.slider('date_block_num',0,34,1)
     Sales_per_item = st.slider('Sales_per_item', -995,2400, 1 )
@@ -36,10 +36,10 @@ def run_ml():
   
   elif submenu=="XgBoost":
     st.subheader("Xg Boost")
-    shop_id = st.slider('shop_id', 1,59, 1 )
-    item_id = st.slider('item_id', 30,22167, 30 )
+    shop_id = st.slider('shop_id', 0,59, 1 )
+    item_id = st.slider('item_id', 0,22167, 1 )
     date_block_num=st.slider('date_block_num',0,34,1)
-    Sales_per_item = st.slider('Sales_per_item', -68970,1829990, 1 )
+    Sales_per_item = st.slider('Sales_per_item', -995,2400, 1 )
 
     data = {
       'Shop ID':shop_id,
