@@ -59,7 +59,7 @@ def run_ml():
 
 
   elif submenu=="Linear Regression":
-    st.subheader("Xg Boost")
+    st.subheader("Linear Regression")
     shop_id = st.slider('shop_id', 0,59, 1 )
     item_id = st.slider('item_id', 0,22167, 1 )
     date_block_num=st.slider('date_block_num',0,34,1)
@@ -75,7 +75,7 @@ def run_ml():
     
     if st.button("Predict"):
 
-      quantity = Xg_model.predict(report_data)
+      quantity = LR_model.predict(report_data)
       st.subheader('Monthly Sales forecast')
       st.subheader(quantity)
 
