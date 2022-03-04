@@ -11,7 +11,7 @@ LR_model=pickle.load(open('LR_model.pkl','rb'))
 # # FUNCTION
 
 def run_ml():  
-  submenu=st.sidebar.selectbox("Select the Model",["Random Forest","XgBoost","Linear Regression"])
+  submenu=st.sidebar.selectbox("Select the Model",["Random Forest","XgBoost"])
 
   if submenu=="Random Forest":
     st.subheader("Random Forest")
